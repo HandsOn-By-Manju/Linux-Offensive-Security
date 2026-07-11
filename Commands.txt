@@ -2,3 +2,10 @@ cat /etc/apt/sources.list.d/kali.sources
 sudo apt update
 sudo apt full-upgrade -y
 sudo apt autoremove
+
+sudo nmap -v -Pn -p- -sS -sV -sC -O -T4 --min-rate 5000 -oN Three.txt 10.129.227.248
+
+gobuster dir \
+-u http://thetoppers.htb \
+-w /usr/share/wordlists/dirb/common.txt \
+-x php,txt,html
