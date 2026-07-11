@@ -1,0 +1,4 @@
+cat /etc/apt/sources.list.d/kali.sources
+sudo apt update
+sudo apt full-upgrade -y
+sudo apt autoremove
